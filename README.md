@@ -1,22 +1,58 @@
-Uso de los códigos:
+# SQL Injection Counterfactual Explanations
+This repository contains the code and experimental resources related to the research work:
+**Counterfactual Explanation of a Classification Model for Detecting SQL Injection Attacks**
 
-1-ConteoSentencias:
-    Realiza un conteo de las coincidencias entre vectores de todo el dataset
+The project explores how machine learning models can be used to classify SQL queries and how **counterfactual explanations** may help analyze the factors that influence the model's predictions.
 
-2-DownSampling: 
-    Reduce las coincidencias a un máximo de 100 para benignos o 38 para malignos
+---
+# Overview
+SQL Injection is one of the most well-known vulnerabilities affecting database-driven applications. Machine learning techniques have been proposed as an alternative approach for detecting malicious queries by analyzing their structural and syntactic characteristics.
 
-3-MultiplicarVectores:
-    Multiplica los vectores del resultante de Downsampling.py para terminar la reduccion de los datasets
+This project investigates how classification models behave when analyzing SQL queries and how changes in query features can affect prediction outcomes.
 
-4-Porcentajes-y-Graficas:
-    Realiza las graficas del porcentaje de cambio totales que hubo al modificar una y dos caracteristicas.
-    
-5-RelevanciaDeLaFeaturesEnCambioDeLaPrediccion_y_Graficacion:
-    Realiza las graficas de las caracteristicas que al ser cambiadas modificaron la predicción, teniendo en cuenta que esto solo se realizo con una caracteristica ya     que con dos todaas modificaban su predicción.
-    
-6-ModeloModificadoParaVectoresDeFeatures:
-    Modelo modificado que nos permite realizar prediccionas mediante una una lista de 82 features encendidas o apagadas.
+The experiments focus on exploring how small modifications in query characteristics may lead to different classification results.
 
-7-ExplainerDashboard.py:
-    Script que nos permitio obtener una visualizacion clara de las metricas y informacion acerca del rendimiento del modelo, mediante un Explainer          Dashboard.
+---
+# Repository Contents
+This repository includes:
+• Python scripts used for data preprocessing and experimentation  
+• Scripts for feature analysis and query processing  
+• Experimental implementations related to model behavior analysis  
+• Datasets containing benign and malicious SQL queries  
+• Processed datasets used during the experiments
+
+The code reflects the experimental workflow used during the development of the research project.
+
+---
+# Methodology
+The experiments generally involve:
+1. Preparing datasets containing SQL queries
+2. Processing and analyzing query features
+3. Training classification models
+4. Studying how modifications in query features affect model predictions
+5. Analyzing model behavior using explainability techniques
+
+---
+# Technologies Used
+
+The project was developed using:
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+These tools were used for data processing, experimentation, and visualization.
+
+---
+# Authors
+Brian A. Cumi-Guzman  
+Alejandro D. Espinosa-Chim  
+Mauricio G. Orozco-del-Castillo  
+Juan A. Recio-García
+
+---
+# License
+This repository is provided for academic and research purposes.
+
+---
