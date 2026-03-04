@@ -4,6 +4,9 @@ This repository contains the code and experimental resources related to the rese
 
 The project explores how machine learning models can be used to classify SQL queries and how **counterfactual explanations** may help analyze the factors that influence the model's predictions.
 
+<img width="697" height="308" alt="image" src="https://github.com/user-attachments/assets/a385de46-1ac0-4662-88b2-4a1aa6504527" />
+
+
 ---
 # Overview
 SQL Injection is one of the most well-known vulnerabilities affecting database-driven applications. Machine learning techniques have been proposed as an alternative approach for detecting malicious queries by analyzing their structural and syntactic characteristics.
